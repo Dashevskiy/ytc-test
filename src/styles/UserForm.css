@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 14.52px;
+  font-size: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+    padding: 5% 0;
+    
+  }
+  
+  .title {
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+  }
+
+  .row:nth-child(2) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .row:nth-last-child(-n+2) {
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .input {
+    max-width: 150px;
+    max-height: 24px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .addAfter {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .delete {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .addNew {
+    background-color: transparent;
+    color: green;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    border-bottom: 1px solid #00B93F;
+    width: max-content;
+    position: absolute;
+    top: -25px;
+  }
+
+  .saveBtn-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .saveChanges {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 103px;
+    height: 23px;
+    border-radius: 8px;
+  }
+  
+  .saveChanges:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
